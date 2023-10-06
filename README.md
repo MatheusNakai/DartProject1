@@ -1,2 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+BRUNO VILARDI BUENO 19.00331-5 \
+MARTIN ROPKE 19.01592-5 \
+MATHEUS TAKAHASHI NAKAI 19.01355-8
