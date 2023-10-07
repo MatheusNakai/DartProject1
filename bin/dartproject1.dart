@@ -15,16 +15,21 @@ void main(List<String> arguments) {
 
   var user_score = 0;
   var CPU_score = 0;
+
   print('Enter the number of rounds you want to play: ');
   int? num_round = int.parse(stdin.readLineSync()!);
+
   for (var i = 0; i < num_round; i++) {
     print("Round ${i + 1}");
+
     final user = roll_dice();
     final user_result = user.reduce((a, b) => a + b);
     final CPU = roll_dice();
     final CPU_result = CPU.reduce((a, b) => a + b);
+
     print('Dice roled by user: $user \t Dice roled by CPU: $CPU');
     print("User resuls: $user_result \t\t\t CPU results: $CPU_result");
+
     if (user_result > CPU_result) {
       print('User wins the round');
       user_score = user_score + 1;
@@ -34,8 +39,11 @@ void main(List<String> arguments) {
     } else {
       print('Draw');
     }
+
     String? next_round = stdin.readLineSync();
   }
+
+  print('User score: $user_score \t\t\t CPU score: $CPU_score');
   if (user_score > CPU_score) {
     print('User wins the game');
   } else if (user_score < CPU_score) {
