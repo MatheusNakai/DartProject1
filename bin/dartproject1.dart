@@ -7,9 +7,9 @@ import 'package:http/http.dart' as http;
 void main(List<String> arguments) {
   List<int> roll_dice() {
     return [
-      Random().nextInt(5) + 1,
-      Random().nextInt(5) + 1,
-      Random().nextInt(5) + 1
+      Random().nextInt(6) + 1,
+      Random().nextInt(6) + 1,
+      Random().nextInt(6) + 1
     ];
   }
 
