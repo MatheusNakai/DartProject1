@@ -46,8 +46,7 @@ void main(List<String> arguments) {
     String? next_round = stdin.readLineSync();
   }
 
-  print(
-      'User score: $user_score \t\t\t CPU score: $CPU_score \t\t\t Draws: $draws');
+  print('User score: $user_score \t\t\t CPU score: $CPU_score');
   if (user_score > CPU_score) {
     print('User wins the game');
   } else if (user_score < CPU_score) {
